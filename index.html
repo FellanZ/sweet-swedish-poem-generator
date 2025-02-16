@@ -3,46 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Rowdies:wght@300;400;700&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Sweet Swedish Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Sweet Swedish Poem Generator</h1>
-    </header>
-
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of your poem"
-          autofocus
-          required
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Poem here
-        <br />
-        Poem here
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/FellanZ" target="_blank">Felicia</a>,
-      open-sourced on
-      <a
-        href="https://github.com/FellanZ/sweet-swedish-poem-generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a
-        href="https://sweet-swedish-poem-generator.netlify.app/"
-        target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header>
+        <h1>SWEET SWEDISH POEM GENERATOR</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of your poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          Poem here
+          <br />
+          Poem here
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/FellanZ" target="_blank">Felicia</a>,
+        open-sourced on
+        <a
+          href="https://github.com/FellanZ/sweet-swedish-poem-generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a
+          href="https://sweet-swedish-poem-generator.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
