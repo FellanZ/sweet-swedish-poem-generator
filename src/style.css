@@ -67,10 +67,30 @@ form {
   box-shadow: 0 5px 10px rgba(41, 41, 41, 0.3);
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   margin-top: 30px;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
   font-size: 14px;
   margin-top: 30px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
