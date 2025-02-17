@@ -56,6 +56,11 @@ form {
   padding: 14px 24px;
 }
 
+.submit-button:active {
+  background-color: rgb(111, 141, 207);
+  transform: translateY(2px);
+}
+
 .poem {
   font-size: 16px;
   background-color: white;
